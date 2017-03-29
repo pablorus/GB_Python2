@@ -9,12 +9,12 @@ def create_file(namef, dir, size):
             size1 = int(s1[0]) * 1024
             token = ''.join(random.choice(string.ascii_uppercase + string.ascii_lowercase + string.digits) 
                             for x in range(size1))
-        if size.endswith('MB'):
+        elif size.endswith('MB'):
             s1 = size.split('MB')
             size1 = int(s1[0]) * 1048567
             token = ''.join(random.choice(string.ascii_uppercase + string.ascii_lowercase + string.digits) 
                             for x in range(size1))
-        if size.endswith('GB'):
+        elif size.endswith('GB'):
             s1 = size.split('GB')
             size1 = int(s1[0]) * 1073741824
             token = ''.join(random.choice(string.ascii_uppercase + string.ascii_lowercase + string.digits) 
