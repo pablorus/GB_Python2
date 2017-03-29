@@ -22,8 +22,9 @@ def create_file(name_f, dir_path, size):
     else:
         token = ''.join(random.choice(string.ascii_uppercase + string.ascii_lowercase + string.digits) 
                         for _ in range(int(size)))
-    with open(dir_path + name_f, "w") as file:  # По-хорошшему, здесь нужно использовать os.path.join(dirm, namef)
+    with open(dir_path + name_f, "w") as file:  # По-хорошшему, здесь нужно использовать os.path.join(dir_path, name_f)
         file.write(token)
+        
 
 create_file("/test1.txt","E:",'10KB')
 create_file("/test2.txt","E:",'1024')
