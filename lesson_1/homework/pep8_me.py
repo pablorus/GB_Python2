@@ -2,7 +2,7 @@ import random
 import string
 
 
-def create_file(name_f, dir, size):
+def create_file(name_f, dir_path, size):
     if not size.isdigit():
         if size.endswith('KB'):
             s1 = size.split('KB')
@@ -22,7 +22,7 @@ def create_file(name_f, dir, size):
     else:
         token = ''.join(random.choice(string.ascii_uppercase + string.ascii_lowercase + string.digits) 
                         for _ in range(int(size)))
-    with open(dir + name_f, "w") as file:  # По-хорошшему, здесь нужно использовать os.path.join(dirm, namef)
+    with open(dir_path + name_f, "w") as file:  # По-хорошшему, здесь нужно использовать os.path.join(dirm, namef)
         file.write(token)
 
 create_file("/test1.txt","E:",'10KB')
