@@ -55,8 +55,7 @@ def main():
     :return: chenged need_hashes.csv
 
     """
-    file_name = 'need_hashes.csv'
-    file_path = os.path.abspath(input('Enter path to {}:\n'.format(file_name)))
+    file_path = os.path.abspath(input('Enter path to need_hashes.csv:\n'))
     my_struct = ('string', 'code', 'hex_digest')
 
     with open(file_path, 'r') as csv_file:
@@ -84,5 +83,5 @@ def run_test():
 
 
 if __name__ == '__main__':
-    run_test()
-    #main()
+    #run_test()
+    main()
