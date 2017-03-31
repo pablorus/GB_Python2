@@ -56,7 +56,7 @@ def cut_file(file_path, size):
         raw_data = f.read()
 
     reg = '.{{1,{}}}'.format(size)
-    data = re.findall(bytes(reg, encoding = 'utf-8'), raw_data, re.DOTALL)
+    data = re.findall(bytes(reg, encoding='utf-8'), raw_data, re.DOTALL)
 
     for index, src in enumerate(data):
         with open(os.path.join(dir_path, 'cut_{}'.format(str(index))), 'wb') as f:
