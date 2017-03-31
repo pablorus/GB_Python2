@@ -26,7 +26,7 @@ def create_file(name_f, dir_path, size):
         file.write(token)
         
 
-create_file("/test1.txt","E:",'10KB')
-create_file("/test2.txt","E:",'1024')
-create_file("/test11.txt","E:",'2MB')
-create_file("/test21.txt","E:",'1B')
+create_file("/test1.txt", "E:", '10KB')
+create_file("/test2.txt", "E:", '1024')
+create_file("/test11.txt", "E:", '2MB')
+create_file("/test21.txt", "E:", '1B')
