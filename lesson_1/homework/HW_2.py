@@ -49,7 +49,7 @@ def get_hash_summ(in_string, in_code):
 
 def main():
     """
-    Main function. Reades need_hashes.csv. Gets hexdigest for all strings in the file.
+    Main function. Reads need_hashes.csv. Gets hexdigest for all strings in the file.
     And appends the received codes in need_hashes.csv.
     :return: chenged need_hashes.csv
 
