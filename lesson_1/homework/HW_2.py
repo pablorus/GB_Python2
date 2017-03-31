@@ -2,6 +2,7 @@ from collections import OrderedDict
 import csv
 import doctest
 import hashlib
+import os.path
 import unittest
 
 import pytest  # Run from console 'python -m pytest HW_2.py'
@@ -49,22 +50,23 @@ def get_hash_summ(in_string, in_code):
 
 def main():
     """
-    Main function. Reads need_hashes.csv. Gets hexdigest for all strings in the file.
+    Main function. Reades need_hashes.csv. Gets hexdigest for all strings in the file.
     And appends the received codes in need_hashes.csv.
     :return: chenged need_hashes.csv
 
     """
-    filename = 'need_hashes.csv'
+    file_name = 'need_hashes.csv'
+    file_path = os.path.abspath(input('Enter path to {}:\n'.format(file_name)))
     my_struct = ('string', 'code', 'hex_digest')
 
-    with open(filename, 'r') as csv_file:
+    with open(file_path, 'r') as csv_file:
         csv_file = csv.reader(csv_file, delimiter=';')
         data = [OrderedDict(zip(my_struct, row)) for row in csv_file]
 
     for src in data:                                                    # Вопрос: Как можно такую конструкцию в одну
         src['hex_digest'] = get_hash_summ(src['string'], src['code'])   # строку записать?
 
-    with open(filename, 'w', newline='') as csv_file:
+    with open(file_path, 'w', newline='') as csv_file:
         csv_file = csv.DictWriter(csv_file, delimiter=';', fieldnames=my_struct)
         csv_file.writerows(data)
 
@@ -82,5 +84,5 @@ def run_test():
 
 
 if __name__ == '__main__':
-    #run_test()
-    main()
+    run_test()
+    #main()
