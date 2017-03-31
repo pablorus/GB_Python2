@@ -2,7 +2,6 @@ from collections import OrderedDict
 import os
 import re
 import hashlib
-import unittest
 
 
 __author__ = "Vasilii Moskvin"
