@@ -1,5 +1,13 @@
 # Урок №1
 
+# Материалы урока (examples)
+1. pep8_cheetsheet.pdf (шпаргалка по pep8)
+2. str_bytes_bytearray.py - строки/байты, хэш-суммы кратко
+3. code_assert.py         - тестирование через assert  
+4. code_doctest.py        - тестирование через doctest
+5. code_unitest.py        - тестирование через unittest
+6. test_code_pytest.py    - тестирование через pytest
+
 # Домашнее задание (директория homework)
 1. Привести в соответствие с рекомендациями PEP8 файл pep8_me.py
 
