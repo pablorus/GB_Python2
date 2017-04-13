@@ -2,6 +2,8 @@
 
 # ---- Обзор некоторых возможностей модулей logging и inspect ----
 
+# * Logging Cookbook: https://docs.python.org/3/howto/logging-cookbook.html
+
 # logging - стандартный модуль для организации логгирования
 import logging      
 
