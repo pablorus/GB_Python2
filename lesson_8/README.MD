@@ -7,6 +7,8 @@
 4. 04_sql_injection.py - примеры SQL-инъекций
 5. 05_simple_auth_server.py - простая аутентификация клиента (сервер)
 6. 06_simple_auth_client.py - простая аутентификация клиента (клиент)
+7. 07_pycrypto_encrypt.py - шифрование информации, модуль PyCryptodome (fork PyCrypto)
+8. 08_pycrypto_sign.py - формирование цифровой подписи сообщений, модуль PyCryptodome (fork PyCrypto)
 
 
 # Домашнее задание (директория homework)
@@ -22,5 +24,7 @@
 5. [SQL injection для начинающих. Часть 1 (Хабр)](https://habrahabr.ru/post/148151/)
 6. [w3schools - SQL Injection](https://www.w3schools.com/SQL/sql_injection.asp)
 7. [Алгоритм RSA (Khan Academy) - хорошее видео](https://www.youtube.com/watch?v=-iWXG8ZqUqY)
+8. [Алгоритм DSA](http://solutionmes.wikidot.com/crypto-dsa)
+9. [Python 3: An Intro to Encryption](http://www.blog.pythonlibrary.org/2016/05/18/python-3-an-intro-to-encryption/)
 
 

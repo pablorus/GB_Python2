@@ -13,4 +13,10 @@
 * передает скачанные файлы на внутрений TCP-сервер из п.1.
 
 # Ссылки
-1. Шпаргалка по asyncio [https://github.com/crazyguitar/pysheeet/blob/master/docs/notes/python-asyncio.rst]
+1. [Шпаргалка по asyncio](https://github.com/crazyguitar/pysheeet/blob/master/docs/notes/python-asyncio.rst)
+2. [What Asynchronous is All About?](http://djangostars.com/blog/asynchronous-programming-in-python-asyncio/)
+3. [The set of asyncio-based libraries built with high quality for humans](https://github.com/aio-libs)
+4. [asyncio — Asynchronous I/O, event loop, and concurrency tools](https://pymotw.com/3/asyncio/index.html)
+5. [Abu Ashraf Masnun. Python asyncio: Future, Task and the Event Loop](http://masnun.com/2015/11/20/python-asyncio-future-task-and-the-event-loop.html)
+6. [Немного фактов о python asyncio](https://habrahabr.ru/post/314606/)
+7. [How the heck does async/await work in Python 3.5?](https://snarky.ca/how-the-heck-does-async-await-work-in-python-3-5/)
