@@ -1,7 +1,7 @@
 # Урок №1
 
 # Материалы урока (examples)
-1. pep8_cheetsheet.pdf (шпаргалка по pep8)
+1. pep8_cheatsheet.pdf (шпаргалка по pep8)
 2. str_bytes_bytearray.py - строки/байты, хэш-суммы кратко
 3. code_assert.py         - тестирование через assert  
 4. code_doctest.py        - тестирование через doctest

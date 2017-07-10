@@ -40,12 +40,13 @@ def sql_injection_1(user_id):
     ''' Пример простой SQL-инъекции
     '''
     # Строка подобного рода уязвима к SQL-инъекциям:
-    week_select_1 = "SELECT * FROM USER WHERE id = "
+    week_select_1 = "SELECT * FROM USER WHERE id = ?"
     week_select_1_2 = "SELECT * FROM USER WHERE id = {}"
 
     conn = sqlite3.connect(db_file)
     curr = conn.cursor()
-    curr.execute(week_select_1 + (user_id))
+    # curr.execute(week_select_1 + (user_id))
+    curr.execute(week_select_1, user_id)
     res = curr.fetchall()
     print('Результат первой уязвимой строки с запросом: ')
     print(res)

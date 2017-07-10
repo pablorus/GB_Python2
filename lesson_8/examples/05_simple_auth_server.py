@@ -43,7 +43,7 @@ def server_authenticate(connection, secret_key):
         сonnection - сетевое соединение (сокет);
         secret_key - ключ шифрования, известный клиенту и серверу
     '''
-    # 1. Создаётся случайное послание и отсылается клиентв
+    # 1. Создаётся случайное послание и отсылается клиенту
     message = os.urandom(32)
     connection.send(message)
 
@@ -94,7 +94,7 @@ def echo_server(address):
     sock.bind(address)
     sock.listen(5)
     while True:
-        conn, addr = s.accept()
+        conn, addr = sock.accept()
         echo_handler(conn)
 
 
